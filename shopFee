@@ -1,0 +1,9 @@
+//shop fee, which is the total of the labor and parts charges times the shop fee rate of 5%
+	shopFee = (*laborCharge + partsCharge) * 0.05;
+	//tax, which is the total of the labor charge, parts charge, and shop fee, times the tax rate of 4%
+	tax = (*laborCharge + partsCharge + shopFee) * 0.04;
+	
+	
+	cout << "Shop Fee: " << formatCurrency(shopFee) << endl;
+	cout << "Tax: " << formatCurrency(tax) << endl;
+	cout << "Total: " << formatCurrency(total) << endl;
